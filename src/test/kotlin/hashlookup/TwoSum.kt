@@ -24,7 +24,7 @@ class Solution {
 
     @Test
     fun `returns false when it doesn't exists`() {
-        Assertions.assertTrue(twoSum(listOf(1, 5, 8, 4, 2, 6, 4545, 6, 3), 4550))
+        Assertions.assertFalse(twoSum(listOf(1, 5, 8, 4, 2, 6, 4545, 6, 3), 4544))
     }
 }
 
