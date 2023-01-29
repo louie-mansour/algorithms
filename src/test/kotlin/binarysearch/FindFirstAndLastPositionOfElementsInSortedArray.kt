@@ -12,7 +12,7 @@ If target is not found in the array, return [-1, -1].
 You must write an algorithm with O(log n) runtime complexity.
  */
 
-class FindFirstAndLastPositionOfElementsInSortedArray {
+class Solution {
     fun searchRange(nums: IntArray, target: Int): IntArray {
         if (nums.isEmpty()) {
             return listOf(-1, -1).toIntArray()
