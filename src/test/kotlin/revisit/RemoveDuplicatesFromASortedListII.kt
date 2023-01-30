@@ -1,5 +1,6 @@
-package linkedlist
+package revisit
 
+import linkedlist.ListNode
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
