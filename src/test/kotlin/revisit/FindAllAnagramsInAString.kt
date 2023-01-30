@@ -13,9 +13,24 @@ typically using all the original letters exactly once.
 
 class FindAllAnagramsInAString {
     fun findAnagrams(s: String, p: String): List<Int> {
-        // I've solved this before, but when I tried again I made the p hashtable more than once which was too slow
+        // I've solved this before (soln below), but when I tried again I made the p hashtable more than once which was too slow
         // See if I can do it again only generating the hash table once
         // (note that it's possible to check if 2 maps are equal)
+
+        val anagramIndices = mutableListOf<Int>()
+        val pHisto = genHisto(p)
+        for(i in 0..(s.length - p.length)) {
+            if(pHisto == genHisto(s.substring(i, i + p.length))) {
+                anagramIndices.add(i)
+            }
+        }
+        return anagramIndices
+    }
+
+    private fun genHisto(s: String): Map<Char, Int> {
+        val histo = mutableMapOf<Char, Int>()
+        s.map { histo[it] = histo[it]?.plus(1)?: 0 }
+        return histo
     }
     @Test
     fun `Find anagrams of second string in first string`() {
