@@ -7,6 +7,8 @@
 3. ThreeSum:
    1. Anything larger than TwoSum, it's best to sort the array
    2. Then use hi and lo pointers to arrive at the solution
+4. Avoid building hashmaps or other structures more than once
+5. 
 
 ## Nice to Haves
 1. Try recursive version of DFS
