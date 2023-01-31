@@ -7,8 +7,11 @@
 3. ThreeSum:
    1. Anything larger than TwoSum, it's best to sort the array
    2. Then use hi and lo pointers to arrive at the solution
-4. Avoid building hashmaps or other structures more than once
-5. 
+4. Avoid building hashmaps or other structures more than once:
+   1. They end up being too slow
+5. Backtracking:
+   1. For powersets (all combinations, not all orders) suffix only needs to contain the right hand side for future iterations
 
 ## Nice to Haves
 1. Try recursive version of DFS
+2. Is there an iterative version to backtracking algorithms?
