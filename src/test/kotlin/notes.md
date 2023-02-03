@@ -4,10 +4,8 @@
 2. Finding pivot in rotated array:
    1. Think of it as finding which side the current element belongs to
    2. Keep track of the smallest element while doing this
-3. ThreeSum:
-   1. Anything larger than TwoSum, it's best to sort the array
-   2. Then use hi and lo pointers to arrive at the solution
-   3. On second thought, it should be possible to do 3sum with hashset. Maybe try it!
+3. twopointer.ThreeSum:
+   1. On second thought, it should be possible to do 3sum with hashset. Maybe try it!
 4. Avoid building hashmaps or other structures more than once:
    1. They end up being too slow
 5. Backtracking:
