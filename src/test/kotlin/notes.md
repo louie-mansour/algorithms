@@ -11,6 +11,9 @@
 5. Backtracking:
    1. For powersets (all combinations, not all orders) suffix only needs to contain the right hand side for future iterations
    2. The "all combination of coins" question is a disguised combination sum :)
+6. Dynamic Programming
+   1. Recusrive solution is sometimes good. e.g. https://leetcode.com/problems/jump-game-ii/submissions/489397902/
+   2. 
 
 ## Nice to Haves
 1. Try recursive version of DFS
