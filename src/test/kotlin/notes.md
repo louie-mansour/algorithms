@@ -13,7 +13,8 @@
    2. The "all combination of coins" question is a disguised combination sum :)
 6. Dynamic Programming
    1. Recusrive solution is sometimes good. e.g. https://leetcode.com/problems/jump-game-ii/submissions/489397902/
-   2. 
+   2. Trouble with DP problems involving substrings and subsequences
+   3. For DP problems with early end conditions (e.g. jump game can reach end) then iterative is easier
 
 ## Nice to Haves
 1. Try recursive version of DFS
