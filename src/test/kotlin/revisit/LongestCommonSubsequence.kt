@@ -8,17 +8,17 @@ A common subsequence of two strings is a subsequence that is common to both stri
  */
 class LongestCommonSubsequence {
     fun longestCommonSubsequence(text1: String, text2: String): Int {
-        val dpTable = Array(text1.length + 1) { IntArray(text2.length + 1) }
+        val memo = Array(text1.length + 1) { IntArray(text2.length + 1)}
 
         for (i in 1..text1.length) {
             for (j in 1..text2.length) {
                 if (text1[i - 1] == text2[j - 1]) {
-                    dpTable[i][j] = dpTable[i - 1][j - 1] + 1
+                    memo[i][j] = memo[i - 1][j - 1] + 1
                 } else {
-                    dpTable[i][j] = maxOf(dpTable[i - 1][j], dpTable[i][j - 1])
+                    memo[i][j] = maxOf(memo[i - 1][j], memo[i][j - 1])
                 }
             }
         }
-        return dpTable[text1.length][text2.length]
+        return memo[text1.length][text2.length]
     }
 }
